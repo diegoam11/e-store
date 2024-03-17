@@ -22,7 +22,7 @@ export const Home: React.FC = () => {
                 <form onSubmit={search} className="w-full flex items-center" style={{ width: "80%" }}>
                     <input
                         type="text"
-                        placeholder="Cuéntanos, ¿Qué estás buscando? :)"
+                        placeholder="¿Qué estás buscando? :)"
                         id="name"
                         name="name"
                         value={searcher}
