@@ -1,0 +1,242 @@
+[
+    {
+        "id": 1,
+        "name": "Vino tinto reserva",
+        "category": "Licores",
+        "price": 25.99
+    },
+    {
+        "id": 2,
+        "name": "Cerveza artesanal IPA",
+        "category": "Licores",
+        "price": 12.49
+    },
+    {
+        "id": 3,
+        "name": "Whisky escocés single malt",
+        "category": "Licores",
+        "price": 45.75
+    },
+    {
+        "id": 4,
+        "name": "Ginebra premium",
+        "category": "Licores",
+        "price": 34.99
+    },
+    {
+        "id": 5,
+        "name": "Vodka de lujo",
+        "category": "Licores",
+        "price": 28.99
+    },
+    {
+        "id": 6,
+        "name": "Chips de maíz con salsa picante",
+        "category": "Snacks",
+        "price": 3.49
+    },
+    {
+        "id": 7,
+        "name": "Palitos de queso",
+        "category": "Snacks",
+        "price": 2.99
+    },
+    {
+        "id": 8,
+        "name": "Patatas fritas gourmet",
+        "category": "Snacks",
+        "price": 4.25
+    },
+    {
+        "id": 9,
+        "name": "Nueces de macadamia tostadas",
+        "category": "Snacks",
+        "price": 7.99
+    },
+    {
+        "id": 10,
+        "name": "Chocolate belga negro",
+        "category": "Snacks",
+        "price": 9.49
+    },
+    {
+        "id": 11,
+        "name": "Barras de proteínas",
+        "category": "Snacks",
+        "price": 5.99
+    },
+    {
+        "id": 12,
+        "name": "Agua mineral natural",
+        "category": "Otros",
+        "price": 1.25
+    },
+    {
+        "id": 13,
+        "name": "Refresco de cola",
+        "category": "Otros",
+        "price": 1.49
+    },
+    {
+        "id": 14,
+        "name": "Café orgánico",
+        "category": "Otros",
+        "price": 8.99
+    },
+    {
+        "id": 15,
+        "name": "Té verde japonés",
+        "category": "Otros",
+        "price": 6.75
+    },
+    {
+        "id": 16,
+        "name": "Zumo de naranja exprimido",
+        "category": "Otros",
+        "price": 3.99
+    },
+    {
+        "id": 17,
+        "name": "Sopa instantánea de miso",
+        "category": "Otros",
+        "price": 2.79
+    },
+    {
+        "id": 18,
+        "name": "Paquete de arroz basmati",
+        "category": "Otros",
+        "price": 4.49
+    },
+    {
+        "id": 19,
+        "name": "Aceite de oliva virgen extra",
+        "category": "Otros",
+        "price": 10.99
+    },
+    {
+        "id": 20,
+        "name": "Vinagre balsámico de Módena",
+        "category": "Otros",
+        "price": 7.25
+    },
+    {
+        "id": 21,
+        "name": "Cerveza sin alcohol",
+        "category": "Licores",
+        "price": 8.99
+    },
+    {
+        "id": 22,
+        "name": "Galletas integrales",
+        "category": "Snacks",
+        "price": 3.29
+    },
+    {
+        "id": 23,
+        "name": "Frutos secos surtidos",
+        "category": "Snacks",
+        "price": 6.49
+    },
+    {
+        "id": 24,
+        "name": "Helado de vainilla",
+        "category": "Otros",
+        "price": 4.99
+    },
+    {
+        "id": 25,
+        "name": "Cerveza rubia tradicional",
+        "category": "Licores",
+        "price": 11.75
+    },
+    {
+        "id": 26,
+        "name": "Salsa de queso cheddar",
+        "category": "Snacks",
+        "price": 5.99
+    },
+    {
+        "id": 27,
+        "name": "Cacahuetes salados",
+        "category": "Snacks",
+        "price": 3.75
+    },
+    {
+        "id": 28,
+        "name": "Bebida isotónica de limón",
+        "category": "Otros",
+        "price": 2.49
+    },
+    {
+        "id": 29,
+        "name": "Tarta de queso casera",
+        "category": "Otros",
+        "price": 12.99
+    },
+    {
+        "id": 30,
+        "name": "Cerveza artesanal de trigo",
+        "category": "Licores",
+        "price": 14.99
+    },
+    {
+        "id": 31,
+        "name": "Caramelo de menta",
+        "category": "Snacks",
+        "price": 1.99
+    },
+    {
+        "id": 32,
+        "name": "Champiñones en conserva",
+        "category": "Otros",
+        "price": 3.49
+    },
+    {
+        "id": 33,
+        "name": "Ron añejo caribeño",
+        "category": "Licores",
+        "price": 19.99
+    },
+    {
+        "id": 34,
+        "name": "Galletas de avena y pasas",
+        "category": "Snacks",
+        "price": 4.49
+    },
+    {
+        "id": 35,
+        "name": "Salmón ahumado premium",
+        "category": "Otros",
+        "price": 16.75
+    },
+    {
+        "id": 36,
+        "name": "Galletas saladas gourmet",
+        "category": "Snacks",
+        "price": 5.25
+    },
+    {
+        "id": 37,
+        "name": "Té negro inglés",
+        "category": "Otros",
+        "price": 5.99
+    },
+    {
+        "id": 38,
+        "name": "Whisky bourbon",
+        "category": "Licores",
+        "price": 29.99
+    },
+    {
+        "id": 39,
+        "name": "Queso manchego curado",
+        "category": "Otros",
+        "price": 11.49
+    },
+    {
+        "id": 40,
+        "name": "Cerveza de abadía belga",
+        "category": "Licores",
+        "price": 17.49
+    }
+]
