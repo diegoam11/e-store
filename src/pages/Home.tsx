@@ -1,7 +1,7 @@
 import { useState } from "react"
 import products from "../assets/data/products.json"
 import { Product } from "../interfaces/product.interface";
-
+import SearchIcon from '@mui/icons-material/Search';
 
 export const Home: React.FC = () => {
     const [productsFiltered, setProductsFiltered] = useState<Product[]>(products);
@@ -9,9 +9,9 @@ export const Home: React.FC = () => {
 
     const search = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        if(searcher.length !== 0){
+        if (searcher.length !== 0) {
             setProductsFiltered(products.filter(p => p.name.toLowerCase().includes(searcher.toLowerCase())))
-        } else{
+        } else {
             setProductsFiltered(products)
         }
     }
@@ -19,18 +19,18 @@ export const Home: React.FC = () => {
     return (
         <div>
             <div className='max-w-400px mt-5 mx-auto flex items-center justify-center'>
-                <form  onSubmit={search} className="w-full flex items-center" style={{ width: "80%" }}>
+                <form onSubmit={search} className="w-full flex items-center" style={{ width: "80%" }}>
                     <input
                         type="text"
                         placeholder="Cuéntanos, ¿Qué estás buscando? :)"
                         id="name"
                         name="name"
                         value={searcher}
-                        className="w-4/5 px-4 mr-1 py-2 border border-gray-300 rounded-l-lg outline-none"
+                        className="w-3/4 px-4 mr-1 py-2 border border-gray-300 rounded-l-lg outline-none"
                         onChange={(e) => setSearcher(e.target.value)}
                     />
-                    <button type="submit" className="w-1/5 px-4 py-2 rounded-r-lg bg-black text-white">
-                        Buscar
+                    <button type="submit" className="w-1/4 px-4 py-2 rounded-r-lg bg-black text-white">
+                        <SearchIcon></SearchIcon>
                     </button>
                 </form>
             </div>
@@ -52,7 +52,6 @@ export const Home: React.FC = () => {
                                     </div>
                                 )
                             })
-
                         }
                     </div>
                 </div>
