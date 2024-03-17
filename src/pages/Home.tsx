@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react"
 import SearchIcon from '@mui/icons-material/Search';
 import { CategoriesContext } from "../context/categories.context";
 import { Product } from "../interfaces/product.interface";
+import { NavLink } from "react-router-dom";
 
 export const Home: React.FC = () => {
     const { productsFiltered, categorySelected } = useContext(CategoriesContext)
@@ -49,13 +50,13 @@ export const Home: React.FC = () => {
                             resultsOfSearch.map((p, index) => {
                                 return (
                                     <div key={index} className="lg:w-1/4 md:w-1/2 p-4 w-full">
-                                        <a className="block relative h-48 rounded overflow-hidden">
+                                        <NavLink to={`productDetail/${p.id}`} className="block relative h-48 rounded overflow-hidden cursor-pointer">
                                             <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260" />
-                                        </a>
+                                        </NavLink>
                                         <div className="mt-4">
                                             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">{p.category}</h3>
                                             <h2 className="text-gray-900 title-font text-lg font-medium">{p.name}</h2>
-                                            <p className="mt-1">${p.price}</p>
+                                            <p className="mt-1">S/{p.price}</p>
                                         </div>
                                     </div>
                                 )
