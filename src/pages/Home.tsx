@@ -1,19 +1,26 @@
-import { useState } from "react"
-import products from "../assets/data/products.json"
-import { Product } from "../interfaces/product.interface";
+import { useContext, useEffect, useState } from "react"
 import SearchIcon from '@mui/icons-material/Search';
+import { CategoriesContext } from "../context/categories.context";
+import { Product } from "../interfaces/product.interface";
 
 export const Home: React.FC = () => {
-    const [productsFiltered, setProductsFiltered] = useState<Product[]>(products);
-    const [searcher, setSearcher] = useState<string>("");
+    const { productsFiltered, categorySelected } = useContext(CategoriesContext)
+    const [resultsOfSearch, setResultsOfSearch] = useState<Product[]>([])
+    const [searcher, setSearcher] = useState<string>("")
+
+    useEffect(() => {
+        if (searcher.length === 0) {
+            setResultsOfSearch(productsFiltered)
+        }
+    }, [searcher])
+
+    useEffect(() => {
+        setResultsOfSearch(productsFiltered)
+    }, [productsFiltered])
 
     const search = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        if (searcher.length !== 0) {
-            setProductsFiltered(products.filter(p => p.name.toLowerCase().includes(searcher.toLowerCase())))
-        } else {
-            setProductsFiltered(products)
-        }
+        setResultsOfSearch(productsFiltered.filter(p => p.name.toLowerCase().includes(searcher.toLowerCase())))
     }
 
     return (
@@ -30,15 +37,16 @@ export const Home: React.FC = () => {
                         onChange={(e) => setSearcher(e.target.value)}
                     />
                     <button type="submit" className="w-1/4 px-4 py-2 rounded-r-lg bg-black text-white">
-                        <SearchIcon></SearchIcon>
+                        <SearchIcon />
                     </button>
                 </form>
             </div>
+            <h1 className='max-w-400px my-6 mx-auto flex items-center justify-center text-gray-600 body-font'>Resultados en categoría {categorySelected}</h1>
             <section className="text-gray-600 body-font">
-                <div className="container px-5 py-14 mx-auto">
+                <div className="container px-5 pb-14 mx-auto">
                     <div className="flex flex-wrap -m-4">
                         {
-                            productsFiltered.map((p, index) => {
+                            resultsOfSearch.map((p, index) => {
                                 return (
                                     <div key={index} className="lg:w-1/4 md:w-1/2 p-4 w-full">
                                         <a className="block relative h-48 rounded overflow-hidden">

@@ -1,13 +1,14 @@
 import { BrowserRouter } from 'react-router-dom'
 import './App.css'
 import { AppRouter } from './Router'
+import { CategoriesContextProvider } from './context/categories.context'
 
-function App() {
+export const App = () => {
   return (
     <BrowserRouter>
-      <AppRouter/>
+      <CategoriesContextProvider>
+          {<AppRouter />}
+      </CategoriesContextProvider>
     </BrowserRouter>
   )
 }
-
-export default App
