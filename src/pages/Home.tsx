@@ -69,7 +69,7 @@ export const Home: React.FC = () => {
             </div>
             {
                 loading ? (<ClipLoader
-                    color={"#000"}
+                    color={"#4F46E5"}
                     loading={loading}
                     cssOverride={override}
                     size={50}
