@@ -44,8 +44,7 @@ export const NavBar: React.FC = () => {
                         {Category.TODO}
                     </button>
                 </nav>
-                <button className="inline-flex items-center bg-indigo-600 border-0 py-1 px-4 focus:outline-none  text-white rounded text-base mt-4 md:mt-0">Inicia Sesión
-                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <button className="inline-flex items-center bg-indigo-600 border-0 py-1 px-4 focus:outline-none  text-white rounded text-base mt-4 md:mt-0">Inicia sesión
                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
                 </button>
